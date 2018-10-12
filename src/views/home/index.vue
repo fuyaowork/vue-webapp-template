@@ -1,31 +1,39 @@
-<template>
-  <div class="app-container">
-    test
-  </div>
-</template>
-
 <script>
-// import { mapGetters } from 'vuex'
-
-export default {
-  name: 'Home',
-  components: {},
-  data() {
-    return {
-    }
+import footGuide from '@/components/footer/footGuide';
+import headSearch from './header/header';
+import menuSwipe from './menu/menu';
+import shopList from './list/list';
+export default{
+  name: 'index',
+  components: {
+      footGuide,
+      headSearch,
+      menuSwipe,
+      shopList
   },
-  // computed: {
-  //   ...mapGetters([
-  //     'roles'
-  //   ])
-  // },
+  data() {
+      return {
+      }
+  },
   methods: {
   },
   created() {
   },
   mounted() {
-  },
-  beforeDestroy() {
-  },
+  }
 }
 </script>
+
+<template>
+  <section class="m-index">
+    <head-search></head-search>
+    <img src="~@/assets/img/adv1.png" width="100%">
+    <menu-swipe></menu-swipe>
+    <shop-list></shop-list>
+    <foot-guide></foot-guide>
+  </section>
+</template>
+
+<style lang="scss" scoped>
+@import "@/assets/css/mixin.scss";
+</style>

@@ -1,3 +1,17 @@
+$foot-bg: #f6f6f6;
+$gray: #7e7e7e;
+$blue: #00a9ff;
+$blue-deep: #0186ff;
+$bc: #e4e4e4;
+$fc:#fff;
+
+//flex 布局和 子元素 对其方式
+@mixin fja($type: space-between, $align: center){
+    display: flex;
+    justify-content: $type;
+    align-items: $align;
+}
+
 @mixin px2rem($property,$px-values,$baseline-px:16px,$support-for-ie:false){
     //Conver the baseline into rems
     $baseline-rem: $baseline-px / 1rem * 1;

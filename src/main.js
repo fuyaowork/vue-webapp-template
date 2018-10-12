@@ -4,6 +4,8 @@ import router from './router/index'
 import store from './store/index'
 import './registerServiceWorker'
 import './assets/js/amfe_flexible.js'
+import './assets/css/site.scss'
+import 'swiper/dist/css/swiper.min.css'
 
 Vue.config.productionTip = false
 

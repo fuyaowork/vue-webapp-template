@@ -32,7 +32,9 @@ export default {
     }
   },
   methods: {},
-  created() {},
+  created() {
+    // console.log(this.baseUrl);
+  },
   mounted() {
     var mySwiper = new Swiper ('.swiper-container', {
       loop: true, // 循环模式选项
@@ -63,8 +65,7 @@ export default {
         <div class="swiper-slide" v-for="i in category.length/10" :key="i">
           <ul>
             <li v-for="(j,index) in category" :key="i.name" v-if="index<i*10&&index>=(i-1)*10">
-                <!-- <img :src="`${baseUrl}my-image.png`"> -->
-                <img :src="baseUrl+'img/indexMenu/'+j.img">
+                <img :src="`${baseUrl}img/indexMenu/${j.img}`">
                 <span>{{j.name}}</span>
             </li>
           </ul>

@@ -47,10 +47,10 @@
 <style lang="scss" scoped>
 @import "@/assets/css/mixin.scss";
 .m-header{
-    background: -webkit-linear-gradient(left, $blue, $blue-deep); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(left, $blue, $blue-deep); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(left, $blue, $blue-deep); /* Firefox 3.6 - 15 */
-    background: linear-gradient(left, $blue, $blue-deep); /* 标准的语法 */
+    background: -webkit-linear-gradient(to right, $blue, $blue-deep); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right, $blue, $blue-deep); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right, $blue, $blue-deep); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, $blue, $blue-deep); /* 标准的语法 */
     color: #fff;
 }
 .m-address{
